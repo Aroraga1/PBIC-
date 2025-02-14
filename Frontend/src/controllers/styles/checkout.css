@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Header */
+  .header {
+    margin: auto;
+    width: 100%;
+    /* max-width: 1200px; */
+    padding: 20px;
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .logo {
+    width: 8vw;
+    height: 20vh;
+    height: auto;
+  }
+  
+  .header .header-info {
+    text-align: right;
+  }
+  
+  .header .header-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .header .timestamp {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-style: italic;
+    color: black;
+  }
+  
+  /* Main Content */
+  .main-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .checkIn {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .checkIn h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .checkIn .checkIn-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkIn .checkIn-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Active Users Section */
+  .activeUsers {
+    width: 100vw;
+    margin-top: 30px;
+  }
+  
+  .activeUsers p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #888;
+  }
+  
+  .user-list {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-card span {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .checkout-btn {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 20px;
+    }
+  
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header-info {
+      text-align: center;
+    }
+  
+    .main-content {
+      padding: 20px;
+    }
+  
+    .checkIn .checkIn-btn {
+      padding: 12px 24px;
+      font-size: 1.1rem;
+    }
+  
+    .user-list {
+      gap: 15px;
+    }
+  
+    .user-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .checkout-btn {
+      width: 100%;
+    }
+  }
+   

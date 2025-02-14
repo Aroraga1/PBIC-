@@ -1,0 +1,265 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body and Global Styles */
+body {
+  background-color: #f3f4f6; /* Light background */
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Header */
+h1 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.4);
+  min-width: 20vw;
+  min-height: 20vh;
+}
+
+.category-btn:hover {
+  background-color: #00bfae;
+  box-shadow: 0 0 15px rgba(0, 191, 174, 0.5);
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #444;
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.5);
+}
+
+button[type="submit"] {
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #00bfae;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 191, 174, 0.5);
+}
+
+button[type="submit"]:hover {
+  background-color: #0066cc;
+  box-shadow: 0 0 20px rgba(0, 102, 204, 0.8);
+}
+
+/* Error Message */
+p {
+  color: #e74c3c;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+/* User Details Section */
+.user-details {
+  margin-top: 40px;
+  background-color: #f3f4f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user-details h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.user-details p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 102, 204, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.6);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .category-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+
+  button[type="submit"] {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+/* src/App.css */
+
+.startups-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.startups-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.startup-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.startup-logo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.startup-detail {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.startup-header {
+  margin-bottom: 20px;
+}
+
+.startup-info p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.startup-info p strong {
+  font-weight: bold;
+}

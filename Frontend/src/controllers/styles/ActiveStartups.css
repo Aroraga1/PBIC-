@@ -1,0 +1,117 @@
+/* ActiveStartupsPage.css */
+.active-startups-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .active-startups-header {
+    background-color: #a2f1d6;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .active-startups-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .loading-spinner {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .loading-spinner::before {
+    content: '⏳';
+    font-size: 2rem;
+    margin-right: 10px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .error-message {
+    color: #f44336;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .startups-list {
+    margin-top: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .startups-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .startup-item {
+    background-color: #f9f9f9;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .startup-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .startup-item strong {
+    color: #333;
+  }
+  
+  .time-in, .visit-count {
+    font-weight: bold;
+  }
+  
+  .no-active-startups {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 50px;
+    color: #888;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .active-startups-header h1 {
+      font-size: 2rem;
+    }
+  
+    .startup-item {
+      padding: 15px;
+    }
+  
+    .loading-spinner {
+      font-size: 1rem;
+    }
+  
+    .error-message, .no-active-startups {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .active-startups-header {
+      padding: 20px;
+    }
+  
+    .startup-item {
+      padding: 10px;
+    }
+  
+    .loading-spinner {
+      font-size: 0.9rem;
+    }
+  }
+  

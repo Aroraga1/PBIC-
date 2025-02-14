@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column; /* Stack header and content */
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Section - Full Width and Aligned to the Top */
+.header {
+  width: 100%;
+  height: 120px; /* Adjust based on your logo's aspect ratio */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  width: 15vw; /* Adjust width if needed */
+  height: 15vh;
+  max-width: 300px; /* Optional: limit width */
+  object-fit: contain; /* Ensure logo maintains aspect ratio */
+}
+
+
+.header .title {
+  font-size: 3.5vw;
+  color: #000000;
+  font-weight: bold;
+}
+
+.header .timestamp {
+ color: #007bff;
+  font-size: 1.1rem;
+}
+
+/* Home Page Container - 90% width */
+.Home {
+  width: 90vw; /* 90% of viewport width */
+  max-width: 1200px; /* Optional, limits the maximum width */
+  margin-top: 140px; /* Add margin to avoid overlap with fixed header */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  width: 25%;
+  height: 20vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 180px;
+  text-align: center;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background-color: #002f61;
+  color: white;
+}
+
+.category-btn:focus {
+  outline: none;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Message */
+p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Checkout Link */
+.checkOutContainer {
+  margin-top: 30px;
+  padding: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.checkOutContainer a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.checkOutContainer a:hover {
+  background-color: #c82333;
+}
+
+/* Active Category Button Styles */
+.category-btn.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .Home {
+    width: 90%;
+    padding: 15px;
+    margin-top: 120px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .category-btn {
+    font-size: 1.3rem;
+    padding: 15px 30px;
+    min-width: 150px;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  input, button[type="submit"] {
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .checkOutContainer a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

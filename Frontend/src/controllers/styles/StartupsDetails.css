@@ -1,0 +1,123 @@
+/* StartupDetail.css */
+
+.startup-detail-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .startup-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+  }
+  
+  .startup-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .startup-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .startup-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .startup-info p {
+    margin-bottom: 15px;
+  }
+  
+  .startup-info strong {
+    color: #333;
+  }
+  
+  .history-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .history-link:hover {
+    background-color: #45a049;
+  }
+  
+  .loading-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+    color: #555;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .startup-name {
+      font-size: 2rem;
+    }
+  
+    .startup-info {
+      font-size: 1rem;
+    }
+  
+    .history-link {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .startup-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .startup-logo {
+      margin-bottom: 20px;
+    }
+  
+    .startup-name {
+      font-size: 1.8rem;
+    }
+  
+    .startup-info {
+      font-size: 0.95rem;
+    }
+  }
+  
